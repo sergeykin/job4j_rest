@@ -1,0 +1,11 @@
+language: java
+jdk:
+- openjdk14
+sudo: true
+notifications:
+  email:
+    recipients:
+    - sergeykinn@mail.ru
+    on_success: never
+    on_failure: always
+
