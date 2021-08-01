@@ -14,7 +14,7 @@ public class Employee {
     private String inn;
     private Timestamp created;
 
-    @OneToMany//(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.LAZY)
     private List<Person> persons;
 
     public static Employee of(String fio, String inn, List<Person> persons) {
